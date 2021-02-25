@@ -1,13 +1,13 @@
 # digidojow
 **A digispark ( ATTiny85 sleep aid )**  
 
-![digidojow](https://raw.githubusercontent.com/Crysknife007/digidojow/main/digidojow.jpg)
-
 Parts list:  
 * Digispark ( Clone ) 
 * Red LED  
 * Appropriate Resistor for LED Chosen
 * Heatshrink for entombing the assembly
+
+![digidojow](https://raw.githubusercontent.com/Crysknife007/digidojow/main/digidojow.jpg)
 
 The LED and resistor assembly are placed in between ground and P0. And then the whole thing can be wrapped in heat shrink tubing.
 
