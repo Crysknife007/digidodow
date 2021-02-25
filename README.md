@@ -4,7 +4,8 @@
 Parts list:  
 * Digispark ( Clone ) 
 * Red LED  
-* Appropriate Resistor for LED Chosen  
+* Appropriate Resistor for LED Chosen
+* Heatshrink for entombing the assembly
 
 There's no on/off switch because at the end of the cycle the ATTiny85 is put to sleep and only draws a few micro-amps. 
 
