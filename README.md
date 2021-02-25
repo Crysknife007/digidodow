@@ -14,3 +14,5 @@ The faint glow on the ceiling fading in and out and gradually slowing down is qu
 This code has been modified from dshiffmans version to run for three hours by default. The lights pulsation gradually slows to 5 cycles per minute.
 
 There's no on/off switch because at the end of the cycle the ATTiny85 is put to sleep and only draws a few micro-amps. 
+
+digidojow(https://raw.githubusercontent.com/Crysknife007/digidojow/main/digidojow.jpg)
