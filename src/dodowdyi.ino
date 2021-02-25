@@ -72,21 +72,6 @@ void ramp (float BPM, float minutesDuration) {
 }
 
 void docycle () {
-    diagPrintln ("DOCYCLE");
-    int sensorVal = digitalRead(modeSwitch);
-
-    //Check the switch to see if we sould run 8 or 20 mins
-    if (sensorVal == LOW) {	//8 Min Structure
-    	diagPrintln ("8 min loop");
-    	ramp (11.0,1); 		//Min 1 = 11 breaths per minute
-    	ramp (10.0,1);		//Min 2 = 10 breaths per minute
-    	ramp (9.0,1);		//Min 3 = 9 breaths per minute
-    	ramp (8.0,1);		//Min 4 = 8 breaths per minute
-    	ramp (7.0,1);		//Min 5 = 7 breaths per minute
-    	ramp (6.5,1);		//Min 6 = 6.5 breaths per minute
-    	ramp (6.0,2);		//Min 7-8 = 6 breaths per minute
-    } else { 				//20 Min Structure
-       	diagPrintln ("20 min loop");
     	ramp (11.0,3); 		//Min 1-3 = 11 breaths per minute
     	ramp (10.0,3);		//Min 4-6 = 10 breaths per minute
     	ramp (9.0,3);		//Min 7-9 = 9 breaths per minute
@@ -94,7 +79,15 @@ void docycle () {
     	ramp (7.0,3);		//Min 13-15 = 7 breaths per minute
     	ramp (6.5,2);		//Min 16-17 = 6.5 breaths per minute
     	ramp (6.0,3);		//Min 18-20 = 6 breaths per minute
-    }
+        ramp (5.5,3);           //Min 20-23 = 5.5 breaths per minute
+        ramp (5.0,20);          // 5 Breaths a minute for the rest of the 3 hour cycle
+        ramp (5.0,20);
+        ramp (5.0,20);
+        ramp (5.0,20);
+        ramp (5.0,20);
+        ramp (5.0,20);
+        ramp (5.0,20);
+        ramp (5.0,17);  
 }
 
 
@@ -129,4 +122,3 @@ void setup() {
 void loop() {
 //never get here
 }
-
