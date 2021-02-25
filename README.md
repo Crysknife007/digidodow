@@ -1,4 +1,4 @@
-# digidojow
+# digidodow
 **A digispark ( ATTiny85 sleep aid )**  
 
 Parts list:  
