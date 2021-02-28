@@ -5,9 +5,9 @@
 #include <EEPROM.h>
 #include <avr/sleep.h>
 
-const int led = PB0;           		// LED is attached to pwm pin 5
+const int led = PB0;           	  // LED is attached to pwm pin 5
 const float pwmIntervals = 254;   // Define pwm intervals
-const float minpwm = 50;			    // Minimum brightness
+const float minpwm = 50;	  // Minimum brightness
 const float msPerMin = 60000;     // Set the ms per minute
 
 // Fade a LED to perceived brightness rather than linearly
@@ -25,7 +25,7 @@ void populateLookup() {
 		PWMval = round(pow (2, (i / r))) - 1;
 		EEPval = EEPROM.read(i);
     
-    // Only write if changed
+                // Only write if changed
 		if (EEPval != PWMval) EEPROM.write (i,PWMval); 
    
 	}
